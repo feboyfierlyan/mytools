@@ -20,13 +20,26 @@ blue="\033[1;34m"
 nc="\033[0m"
 
 #Requirements
-requirements(){
 command -v tqdm > /dev/null 2>&1 || { echo >&2 "Install tqdm dulu!, exit!"; exit 1; }
 command -v php > /dev/null 2>&1 || { echo >&2 "Install php dulu!, exit!"; exit 1; }
-}
+
+#Banner
+
+clear
+echo -e "$cafe"
+echo "                          o8                        o888              "
+echo "oo ooo oooo oooo   oooo o888oo ooooooo     ooooooo   888   oooooooo8  "
+echo " 888 888 888 888   888   888 888     888 888     888 888  888ooooooo  "
+echo " 888 888 888  888 888    888 888     888 888     888 888          888 "
+echo "o888o888o888o   8888      888o 88ooo88     88ooo88  o888o 88oooooo88  "
+echo "             o8o888                                                   "
+echo -e "	     $yellow .:.:Script by @feboyfierlyan:.:.$nc"
+echo ""
+echo -e "$yellow Harap Tunggu!...$nc"
+sleep 3
+
 
 #Intro
-intro(){
 path=pwd
 clear
 echo -e "$cafe"
@@ -38,10 +51,10 @@ echo "██║ ╚═╝ ██║   ██║      ██║   ╚████
 echo "╚═╝     ╚═╝   ╚═╝      ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
 echo -e "		     $red Indo$nc$White Love <3$nc"
 echo -e "	     $yellow .:.:Script by @feboyfierlyan:.:.$nc"
-}
+
 
 #Menu
-menu(){
+
 echo ""
 echo -e "$blue Pilih Tools yg akan di download! : $nc"
 echo ""
@@ -236,7 +249,3 @@ if [ $pilih == 99 ]; then
 		bash mytools.sh
 	fi
 fi
-}
-requirements
-intro
-menu
