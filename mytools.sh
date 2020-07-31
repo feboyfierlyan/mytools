@@ -1,7 +1,7 @@
 #!/bin/bash
 #Author	: @feboyfierlyan
 #Github	: https://www.github.com/feboyfierlyan
-#MyTools Downloader V0.1
+#MyTools Downloader V1.0
 #Indo <3
 #nyolong dosa :v
 #bikin script ga gampang!
